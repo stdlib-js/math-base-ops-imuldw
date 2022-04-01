@@ -1,0 +1,43 @@
+{
+  "name": "@stdlib/math-base-ops-imuldw",
+  "version": "0.0.0",
+  "description": "Compute the double word product of two signed 32-bit integers.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-ops-imuldw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "umuldw",
+    "imuldw",
+    "multiplication",
+    "multiply",
+    "mult",
+    "double word",
+    "double-word",
+    "product",
+    "integer",
+    "unsigned",
+    "uint",
+    "uint32",
+    "32-bit",
+    "32bit",
+    "64-bit",
+    "64bit",
+    "long"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
