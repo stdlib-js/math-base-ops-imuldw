@@ -30,32 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-ops-imuldw
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-imuldw = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.imuldw;
-})();
-</script>
+var imuldw = require( '@stdlib/math-base-ops-imuldw' );
 ```
 
 #### imuldw( \[out,] a, b )
@@ -90,14 +88,9 @@ v = imuldw( 0x80000000|0, 0x40000000|0 ); // -(2^31) * 2^30 = -23058430092136940
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var lpad = require( '@stdlib/string-left-pad' );
+var imuldw = require( '@stdlib/math-base-ops-imuldw' );
 
 var i;
 var j;
@@ -109,11 +102,6 @@ for ( i = 0x7FFFFFF0; i < 0x7FFFFFFF; i++ ) {
         console.log( '%d x %d = 0x%s%s', i|0, j|0, lpad( ( y[0] >>> 0 ).toString( 16 ), 8, '0'), lpad( ( y[1] >>> 0 ).toString( 16 ), 8, '0' ) );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -200,16 +188,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-base-ops-imuldw/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-base-ops-imuldw/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-base-ops-imuldw/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-base-ops-imuldw/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-ops-imuldw/main/LICENSE
 
-[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer/tree/umd
+[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/imul]: https://github.com/stdlib-js/math-base-ops-imul/tree/umd
+[@stdlib/math/base/ops/imul]: https://github.com/stdlib-js/math-base-ops-imul
 
-[@stdlib/math/base/ops/umuldw]: https://github.com/stdlib-js/math-base-ops-umuldw/tree/umd
+[@stdlib/math/base/ops/umuldw]: https://github.com/stdlib-js/math-base-ops-umuldw
 
 <!-- </related-links> -->
 
