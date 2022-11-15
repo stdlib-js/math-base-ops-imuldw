@@ -39,7 +39,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-imuldw = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/browser.js' )
+imuldw = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -51,7 +51,7 @@ var imuldw = require( 'path/to/vendor/umd/math-base-ops-imuldw/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -115,7 +115,7 @@ var bool = ( v === out );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
