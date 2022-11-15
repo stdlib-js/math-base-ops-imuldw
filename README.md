@@ -37,13 +37,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import imuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-ops-imuldw/tags). For example,
+
+```javascript
 import imuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@esm/index.mjs';
 ```
 
 #### imuldw( a, b )
@@ -99,7 +104,7 @@ var bool = ( v === out );
 <script type="module">
 
 import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@esm/index.mjs';
-import imuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@v0.0.2-esm/index.mjs';
+import imuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-imuldw@esm/index.mjs';
 
 var i;
 var j;
